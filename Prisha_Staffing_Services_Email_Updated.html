@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prisha Staffing Services | Job Opportunities</title>
+<meta name="description" content="Prisha Staffing Services - Job opportunities in Gujarat and across India.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:#172033;background:#f5f8fc;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:100;background:#fff;box-shadow:0 3px 18px rgba(0,0,0,.10)}
+.nav{max-width:1180px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:22px;font-weight:900;color:#123b82}.logo span{color:#f28a24}
+nav{display:flex;gap:18px;align-items:center;font-weight:700;font-size:14px}
+.lang-select{padding:8px 10px;border:1px solid #d5ddea;border-radius:7px;font-weight:700;color:#123b82;background:#fff}
+nav a:hover{color:#f28a24}
+.menu-btn{display:none;border:0;background:#123b82;color:#fff;padding:9px 12px;border-radius:7px}
+
+.hero{position:relative;min-height:650px;overflow:hidden;color:#fff;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background-size:cover;background-position:center;animation:heroSlide 25s infinite;filter:brightness(.48)}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(8,31,70,.88),rgba(18,59,130,.50),rgba(0,0,0,.25))}
+@keyframes heroSlide{
+0%,18%{background-image:url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=85')}
+20%,38%{background-image:url('https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1800&q=85')}
+40%,58%{background-image:url('https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=1800&q=85')}
+60%,78%{background-image:url('https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1800&q=85')}
+80%,98%{background-image:url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1800&q=85')}
+100%{background-image:url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=85')}
+}
+.hero-inner{position:relative;z-index:2;max-width:1180px;width:100%;margin:auto;padding:80px 20px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.badge{display:inline-block;background:#ffffff22;border:1px solid #ffffff45;padding:7px 14px;border-radius:30px;margin-bottom:17px}
+h1{font-size:52px;line-height:1.08;margin-bottom:18px}
+.hero p{font-size:19px;max-width:680px;color:#eef5ff}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:27px}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;font-weight:800;border:0;cursor:pointer}
+.primary{background:#f28a24;color:#fff}.secondary{background:#fff;color:#123b82}
+.hero-card{background:rgba(255,255,255,.97);color:#172033;border-radius:17px;padding:27px;box-shadow:0 15px 45px rgba(0,0,0,.25)}
+.hero-card h3{font-size:24px;color:#123b82;margin-bottom:14px}
+.check-list{display:grid;gap:10px}
+.check{display:flex;align-items:flex-start;gap:10px;background:#e9f8ee;border:1px solid #bce8ca;border-radius:9px;padding:11px 12px;color:#183523;font-weight:700}
+.check b{color:#14833b;font-size:19px;line-height:1}
+
+section{padding:65px 20px}
+.container{max-width:1180px;margin:auto}
+.title{text-align:center;margin-bottom:35px}
+.title h2{font-size:34px;color:#123b82}.title p{color:#657086;margin-top:7px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feature{background:#fff;padding:26px;border-radius:15px;border:1px solid #e8edf5;box-shadow:0 6px 25px rgba(20,50,100,.07)}
+.icon{font-size:30px}.feature h3{color:#123b82;margin:7px 0}
+
+.photos{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.photo{position:relative;overflow:hidden;border-radius:15px;height:270px;background:#ddd}
+.photo img{width:100%;height:100%;object-fit:cover;transition:.4s}.photo:hover img{transform:scale(1.07)}
+.photo-text{position:absolute;left:0;right:0;bottom:0;padding:18px;color:#fff;background:linear-gradient(transparent,rgba(0,0,0,.86))}
+.photo-text h3{font-size:18px}.photo-text p{font-size:13px}
+
+.jobs{background:#edf4ff}
+.job{background:#fff;border-left:5px solid #f28a24;padding:22px;border-radius:12px;display:flex;justify-content:space-between;align-items:center;gap:20px;box-shadow:0 4px 18px rgba(20,50,100,.06)}
+.job+.job{margin-top:14px}.job h3{color:#123b82}.job small{color:#657086}
+
+.panindia{background:#123b82;color:#fff}.panindia .title h2,.panindia .title p{color:#fff}
+.pills{display:flex;justify-content:center;gap:10px;flex-wrap:wrap}.pill{padding:9px 15px;border:1px solid #ffffff45;background:#ffffff18;border-radius:30px}
+
+.form-wrap{max-width:850px;margin:auto;background:#fff;border-radius:16px;padding:30px;box-shadow:0 8px 30px rgba(20,50,100,.09)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:6px}.full{grid-column:1/-1}
+label{font-weight:800;font-size:14px}input,select,textarea{font:inherit;padding:12px;border:1px solid #d5ddea;border-radius:8px;background:#fff}textarea{min-height:95px}
+.note{font-size:13px;color:#68758a;margin-top:10px}
+.success{display:none;background:#e9f8ee;color:#155c2c;border:1px solid #bce8ca;padding:12px;border-radius:8px;margin-top:15px;font-weight:700}
+
+.contact{background:#f0f3f8}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.contact-card{background:#fff;border-radius:15px;padding:27px}.contact-card h3{color:#123b82;margin-bottom:10px}.contact-card p{margin:7px 0}
+.contact-card a{color:#123b82;font-weight:700}
+
+footer{background:#101c32;color:#dbe4f3;padding:42px 20px}.footer-grid{max-width:1180px;margin:auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}.footer-title{color:#fff;font-size:19px;font-weight:900;margin-bottom:10px}.copy{text-align:center;border-top:1px solid #ffffff1a;margin-top:28px;padding-top:18px;color:#98a7be}
+
+@media(max-width:850px){
+nav{display:none}.menu-btn{display:block}.hero-inner{grid-template-columns:1fr;padding-top:65px;padding-bottom:65px}h1{font-size:39px}.grid,.photos{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+.grid,.photos{grid-template-columns:1fr}.form-grid{grid-template-columns:1fr}.full{grid-column:auto}.job{flex-direction:column;align-items:flex-start}.hero{min-height:720px}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+<div class="logo">PRISHA <span>STAFFING</span> SERVICES</div>
+<nav>
+<a href="#home" data-i18n="home">Home</a><a href="#jobs" data-i18n="jobs">Jobs</a><a href="#work" data-i18n="work">Work Areas</a><a href="#register" data-i18n="apply">Apply</a><a href="#contact" data-i18n="contact">Contact</a>
+<select class="lang-select" id="languageSelect" aria-label="Language">
+<option value="gu">ગુજરાતી</option>
+<option value="hi">हिंदी</option>
+<option value="en">English</option>
+</select>
+</nav>
+<button class="menu-btn" onclick="alert('Use the buttons below to explore Jobs and Apply.')">☰</button>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-bg"></div><div class="hero-overlay"></div>
+<div class="hero-inner">
+<div>
+<div class="badge">💼 Recruitment & Staffing Services</div>
+<h1>તમારી Job, અમારી Opportunity</h1>
+<p>PRISHA STAFFING SERVICES સાથે Gujarat અને Gujarat બહાર ઉપલબ્ધ વિવિધ Job Opportunities માટે જોડાઓ. Supervisor, Helper, Back Office, Warehouse, Factory, Construction Site અને અન્ય ક્ષેત્રોમાં openings માટે અરજી કરો.</p>
+<div class="btns">
+<a class="btn primary" href="#jobs">🔎 Jobs જુઓ</a>
+<a class="btn secondary" href="#register">📝 Job માટે Apply કરો</a>
+</div>
+</div>
+<div class="hero-card">
+<h3>અમારી સાથે કેમ જોડાવું?</h3>
+<div class="check-list">
+<div class="check"><b>✓</b><span>વિવિધ કંપનીઓની Job Opportunities</span></div>
+<div class="check"><b>✓</b><span>Gujarat અને અન્ય States માટે openings</span></div>
+<div class="check"><b>✓</b><span>Supervisor થી Helper સુધી વિવિધ roles</span></div>
+<div class="check"><b>✓</b><span>Office, Factory, Warehouse અને Site Jobs</span></div>
+<div class="check"><b>✓</b><span>સરળ Online Registration</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="title"><h2>અમારી Staffing Services</h2><p>વિવિધ industry અને work profiles માટે recruitment support.</p></div>
+<div class="grid">
+<div class="feature"><div class="icon">👷</div><h3>Site & Construction</h3><p>Supervisor, Helper, Technician અને site-support જેવી Job Opportunities.</p></div>
+<div class="feature"><div class="icon">🏭</div><h3>Factory & Production</h3><p>Operator, Production, Technician અને Helper માટેની opportunities.</p></div>
+<div class="feature"><div class="icon">💻</div><h3>Back Office</h3><p>Data Entry, Office Assistant, Admin અને support roles.</p></div>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+<div class="title"><h2>વિવિધ કામના ક્ષેત્રો</h2><p>તમારી skill અને અનુભવ પ્રમાણે યોગ્ય opportunity શોધો.</p></div>
+<div class="photos">
+<div class="photo"><img src="https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=85" alt="Construction workers"><div class="photo-text"><h3>Construction Site</h3><p>Supervisor • Helper • Technician</p></div></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=85" alt="Industrial work"><div class="photo-text"><h3>Factory & Production</h3><p>Operator • Production • Helper</p></div></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=85" alt="Office team"><div class="photo-text"><h3>Back Office</h3><p>Data Entry • Admin • Support</p></div></div>
+<div class="photo"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=900&q=85" alt="Warehouse work"><div class="photo-text"><h3>Warehouse & Logistics</h3><p>Picker • Packer • Loader • Store</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="jobs" id="jobs">
+<div class="container">
+<div class="title"><h2>Latest Job Opportunities</h2><p>નવી vacancy આવે ત્યારે આ sectionમાં Job details update કરી શકાય છે.</p></div>
+<div class="job"><div><h3>Production / Factory Jobs</h3><small>📍 Gujarat & Other States • Full Time</small></div><a class="btn primary" href="#register">Apply for Job</a></div>
+<div class="job"><div><h3>Warehouse / Picker / Loader</h3><small>📍 Gujarat • Full Time</small></div><a class="btn primary" href="#register">Apply for Job</a></div>
+<div class="job"><div><h3>Supervisor / Helper / Site Work</h3><small>📍 Gujarat & Pan India • Full Time</small></div><a class="btn primary" href="#register">Apply for Job</a></div>
+<div class="job"><div><h3>Back Office / Data Entry</h3><small>📍 Multiple Locations • Full Time</small></div><a class="btn primary" href="#register">Apply for Job</a></div>
+</div>
+</section>
+
+<section class="panindia">
+<div class="container">
+<div class="title"><h2>Gujarat + Pan India Opportunities</h2><p>Available company requirements પ્રમાણે Gujarat તથા અન્ય Statesમાં Job Opportunities.</p></div>
+<div class="pills">
+<span class="pill">📍 Gujarat</span><span class="pill">📍 Madhya Pradesh</span><span class="pill">📍 Uttar Pradesh</span><span class="pill">📍 Bihar</span><span class="pill">📍 Rajasthan</span><span class="pill">📍 Maharashtra</span><span class="pill">📍 Jharkhand</span><span class="pill">📍 Chhattisgarh</span><span class="pill">📍 Other States</span>
+</div>
+</div>
+</section>
+
+<section id="register">
+<div class="container">
+<div class="title"><h2>Job માટે Registration</h2><p>તમારી basic details ભરો. Registration પછી માહિતી email દ્વારા અમને મોકલાશે.</p></div>
+<div class="form-wrap">
+<form action="https://formsubmit.co/prishastaffingservices1@gmail.com" method="POST" enctype="multipart/form-data" onsubmit="setTimeout(()=>document.getElementById('success').style.display='block',500)">
+<input type="hidden" name="_subject" value="New Job Registration - Prisha Staffing Services">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://example.com/thank-you">
+<div class="form-grid">
+<div class="field"><label>પૂરું નામ *</label><input name="Name" required placeholder="તમારું નામ"></div>
+<div class="field"><label>Mobile Number *</label><input name="Mobile" required type="tel" placeholder="10 digit mobile"></div>
+<div class="field"><label>Email Address</label><input name="Email" type="email" placeholder="Your email address"></div>
+<div class="field"><label>Resume / CV</label><input name="Resume" id="resume" type="file" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"></div>
+<div class="field"><label>Village</label><input name="Village" placeholder="ગામ"></div>
+<div class="field"><label>Taluka</label><input name="Taluka" placeholder="તાલુકો"></div>
+<div class="field"><label>District</label><input name="District" placeholder="જિલ્લો"></div>
+<div class="field"><label>State</label><input name="State" value="Gujarat"></div>
+<div class="field"><label>Education</label><input name="Education" placeholder="10th / 12th / ITI / Graduate"></div>
+<div class="field"><label>Experience</label><input name="Experience" placeholder="Fresher / Experienced"></div>
+<div class="field"><label>Preferred Job</label><select name="Preferred Job"><option>Supervisor</option><option>Helper</option><option>Back Office</option><option>Construction Site</option><option>Warehouse</option><option>Factory / Production</option><option>Technician</option><option>Other</option></select></div>
+<div class="field"><label>Preferred Location</label><input name="Preferred Location" placeholder="Gujarat / Other State"></div>
+<div class="field full"><label>Message / Remark</label><textarea name="Remark" placeholder="તમારી વધારાની માહિતી"></textarea></div>
+<div class="field full"><button class="btn primary" type="submit">📩 Registration Submit કરો</button><div id="success" class="success">તમારી registration submit થઈ રહી છે. Email inbox ચેક કરો.</div><div class="note">Resume: PDF, DOC અથવા DOCX • કુલ file size 10MB સુધી. નોંધ: પ્રથમ registration પછી email verification માંગાઈ શકે છે.</div></div>
+</div>
+</form>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+<div class="title"><h2>Contact Prisha Staffing Services</h2><p>Job માટે સીધો સંપર્ક કરો.</p></div>
+<div class="contact-grid">
+<div class="contact-card"><h3>📍 Main Location</h3><p><strong>Lunawada, Mahisagar, Gujarat, India</strong></p><p>Gujarat તથા અન્ય Statesની Job Opportunities માટે સંપર્ક કરી શકો છો.</p></div>
+<div class="contact-card"><h3>📞 Contact & WhatsApp</h3>
+<p>👤 <strong>Ashwin Bhoi</strong><br>📞 <a href="tel:+919737884504">+91 97378 84504</a></p>
+<p>👤 <strong>Mukund Panchal</strong><br>📞 <a href="tel:+919726029592">+91 97260 29592</a></p>
+<p>💬 <a href="https://wa.me/919737884504" target="_blank">WhatsApp પર સંપર્ક કરો – Ashwin Bhoi</a></p>
+<p>📧 <a href="mailto:prishastaffingservices1@gmail.com">prishastaffingservices1@gmail.com</a></p>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="footer-grid">
+<div><div class="footer-title">PRISHA STAFFING SERVICES</div><p>Connecting People With Job Opportunities.</p></div>
+<div><div class="footer-title">Quick Links</div><p><a href="#jobs">Jobs</a><br><a href="#work">Work Areas</a><br><a href="#register">Apply</a></p></div>
+<div><div class="footer-title">Location</div><p>Lunawada, Mahisagar, Gujarat, India</p><p>📧 <a href="mailto:prishastaffingservices1@gmail.com">prishastaffingservices1@gmail.com</a></p></div>
+</div>
+<div class="copy">© 2026 Prisha Staffing Services. All rights reserved.</div>
+</footer>
+
+<script>
+const L = {
+gu: {
+"Home":"હોમ","Jobs":"જોબ્સ","Work Areas":"કામના ક્ષેત્રો","Apply":"અરજી કરો","Contact":"સંપર્ક",
+"Recruitment & Staffing Services":"ભરતી અને સ્ટાફિંગ સેવાઓ",
+"તમારી Job, અમારી Opportunity":"તમારી નોકરી, અમારી તક",
+"PRISHA STAFFING SERVICES સાથે Gujarat અને Gujarat બહાર ઉપલબ્ધ વિવિધ Job Opportunities માટે જોડાઓ. Supervisor, Helper, Back Office, Warehouse, Factory, Construction Site અને અન્ય ક્ષેત્રોમાં openings માટે અરજી કરો.":"PRISHA STAFFING SERVICES સાથે ગુજરાત અને ગુજરાત બહાર ઉપલબ્ધ વિવિધ નોકરીની તકો સાથે જોડાઓ. સુપરવાઇઝર, હેલ્પર, બેક ઓફિસ, વેરહાઉસ, ફેક્ટરી, કન્સ્ટ્રક્શન સાઇટ અને અન્ય ક્ષેત્રોમાં ઉપલબ્ધ નોકરીઓ માટે અરજી કરો.",
+"🔎 Jobs જુઓ":"🔎 નોકરીઓ જુઓ","📝 Job માટે Apply કરો":"📝 નોકરી માટે અરજી કરો",
+"અમારી સાથે કેમ જોડાવું?":"અમારી સાથે કેમ જોડાવું?",
+"વિવિધ કંપનીઓની Job Opportunities":"વિવિધ કંપનીઓની નોકરીની તકો",
+"Gujarat અને અન્ય States માટે openings":"ગુજરાત અને અન્ય રાજ્યોમાં નોકરીની તકો",
+"Supervisor થી Helper સુધી વિવિધ roles":"સુપરવાઇઝરથી હેલ્પર સુધી વિવિધ કામની ભૂમિકાઓ",
+"Office, Factory, Warehouse અને Site Jobs":"ઓફિસ, ફેક્ટરી, વેરહાઉસ અને સાઇટની નોકરીઓ",
+"સરળ Online Registration":"સરળ ઓનલાઈન નોંધણી",
+"અમારી Staffing Services":"અમારી સ્ટાફિંગ સેવાઓ","વિવિધ industry અને work profiles માટે recruitment support.":"વિવિધ ઉદ્યોગો અને કામના ક્ષેત્રો માટે ભરતી સહાય.",
+"Site & Construction":"સાઇટ અને બાંધકામ","Supervisor, Helper, Technician અને site-support જેવી Job Opportunities.":"સુપરવાઇઝર, હેલ્પર, ટેકનિશિયન અને સાઇટ સપોર્ટ જેવી નોકરીની તકો.",
+"Factory & Production":"ફેક્ટરી અને ઉત્પાદન","Operator, Production, Technician અને Helper માટેની opportunities.":"ઓપરેટર, ઉત્પાદન, ટેકનિશિયન અને હેલ્પર માટેની નોકરીની તકો.",
+"Back Office":"બેક ઓફિસ","Data Entry, Office Assistant, Admin અને support roles.":"ડેટા એન્ટ્રી, ઓફિસ આસિસ્ટન્ટ, એડમિન અને સપોર્ટની નોકરીઓ.",
+"વિવિધ કામના ક્ષેત્રો":"વિવિધ કામના ક્ષેત્રો","તમારી skill અને અનુભવ પ્રમાણે યોગ્ય opportunity શોધો.":"તમારી કુશળતા અને અનુભવ પ્રમાણે યોગ્ય નોકરીની તક શોધો.",
+"Construction Site":"બાંધકામ સાઇટ","Supervisor • Helper • Technician":"સુપરવાઇઝર • હેલ્પર • ટેકનિશિયન",
+"Factory & Production":"ફેક્ટરી અને ઉત્પાદન","Operator • Production • Helper":"ઓપરેટર • ઉત્પાદન • હેલ્પર",
+"Back Office":"બેક ઓફિસ","Data Entry • Admin • Support":"ડેટા એન્ટ્રી • એડમિન • સપોર્ટ",
+"Warehouse & Logistics":"વેરહાઉસ અને લોજિસ્ટિક્સ","Picker • Packer • Loader • Store":"પિકર • પેકર • લોડર • સ્ટોર",
+"Latest Job Opportunities":"નવીનતમ નોકરીની તકો","નવી vacancy આવે ત્યારે આ sectionમાં Job details update કરી શકાય છે.":"નવી નોકરીની જગ્યા આવે ત્યારે આ વિભાગમાં તેની વિગતો અપડેટ કરી શકાય છે.",
+"Production / Factory Jobs":"ઉત્પાદન / ફેક્ટરીની નોકરીઓ","📍 Gujarat & Other States • Full Time":"📍 ગુજરાત અને અન્ય રાજ્યો • પૂર્ણ સમય",
+"Warehouse / Picker / Loader":"વેરહાઉસ / પિકર / લોડર","📍 Gujarat • Full Time":"📍 ગુજરાત • પૂર્ણ સમય",
+"Supervisor / Helper / Site Work":"સુપરવાઇઝર / હેલ્પર / સાઇટનું કામ","📍 Gujarat & Pan India • Full Time":"📍 ગુજરાત અને સમગ્ર ભારત • પૂર્ણ સમય",
+"Back Office / Data Entry":"બેક ઓફિસ / ડેટા એન્ટ્રી","📍 Multiple Locations • Full Time":"📍 વિવિધ સ્થળો • પૂર્ણ સમય",
+"Apply for Job":"નોકરી માટે અરજી કરો",
+"Gujarat + Pan India Opportunities":"ગુજરાત + સમગ્ર ભારતની નોકરીની તકો",
+"Available company requirements પ્રમાણે Gujarat તથા અન્ય Statesમાં Job Opportunities.":"કંપનીની ઉપલબ્ધ જરૂરિયાત મુજબ ગુજરાત તથા અન્ય રાજ્યોમાં નોકરીની તકો.",
+"📍 Gujarat":"📍 ગુજરાત","📍 Madhya Pradesh":"📍 મધ્ય પ્રદેશ","📍 Uttar Pradesh":"📍 ઉત્તર પ્રદેશ","📍 Bihar":"📍 બિહાર","📍 Rajasthan":"📍 રાજસ્થાન","📍 Maharashtra":"📍 મહારાષ્ટ્ર","📍 Jharkhand":"📍 ઝારખંડ","📍 Chhattisgarh":"📍 છત્તીસગઢ","📍 Other States":"📍 અન્ય રાજ્યો",
+"Job માટે Registration":"નોકરી માટે નોંધણી","તમારી basic details ભરો. Registration પછી માહિતી email દ્વારા અમને મોકલાશે.":"તમારી મૂળભૂત વિગતો ભરો. નોંધણી કર્યા પછી તમારી માહિતી ઈમેલ દ્વારા અમને મળશે.",
+"પૂરું નામ *":"પૂરું નામ *","તમારું નામ":"તમારું નામ","Mobile Number *":"મોબાઇલ નંબર *","10 digit mobile":"10 અંકનો મોબાઇલ નંબર","Village":"ગામ","ગામ":"ગામ","Taluka":"તાલુકો","તાલુકો":"તાલુકો","District":"જિલ્લો","જિલ્લો":"જિલ્લો","State":"રાજ્ય","Gujarat":"ગુજરાત",
+"Education":"શૈક્ષણિક લાયકાત","10th / 12th / ITI / Graduate":"10મું / 12મું / ITI / સ્નાતક","Experience":"અનુભવ","Fresher / Experienced":"ફ્રેશર / અનુભવી","Preferred Job":"પસંદગીની નોકરી","Preferred Location":"પસંદગીનું સ્થળ","Gujarat / Other State":"ગુજરાત / અન્ય રાજ્ય",
+"Supervisor":"સુપરવાઇઝર","Helper":"હેલ્પર","Back Office":"બેક ઓફિસ","Construction Site":"બાંધકામ સાઇટ","Warehouse":"વેરહાઉસ","Factory / Production":"ફેક્ટરી / ઉત્પાદન","Technician":"ટેકનિશિયન","Other":"અન્ય",
+"Message / Remark":"સંદેશ / નોંધ","તમારી વધારાની માહિતી":"તમારી વધારાની માહિતી","📩 Registration Submit કરો":"📩 નોંધણી મોકલો",
+"નોંધ: FormSubmit દ્વારા પ્રથમ registration પછી email verification માંગાઈ શકે છે. Email verification પૂર્ણ થયા પછી submissions તમારા email પર આવશે.":"નોંધ: પ્રથમ નોંધણી પછી ઈમેલ ચકાસણી માંગવામાં આવી શકે છે. ઈમેલ ચકાસણી પૂર્ણ થયા પછી નવી નોંધણીઓ તમારા ઈમેલ પર આવશે.",
+"Contact Prisha Staffing Services":"Prisha Staffing Servicesનો સંપર્ક","Job માટે સીધો સંપર્ક કરો.":"નોકરી માટે સીધો સંપર્ક કરો.","📍 Main Location":"📍 મુખ્ય સ્થળ","Lunawada, Mahisagar, Gujarat, India":"લુણાવાડા, મહિસાગર, ગુજરાત, ભારત","Gujarat તથા અન્ય Statesની Job Opportunities માટે સંપર્ક કરી શકો છો.":"ગુજરાત તથા અન્ય રાજ્યોની નોકરીની તકો માટે સંપર્ક કરી શકો છો.",
+"📞 Contact & WhatsApp":"📞 સંપર્ક અને WhatsApp","WhatsApp પર સંપર્ક કરો":"WhatsApp પર સંપર્ક કરો","Connecting People With Job Opportunities.":"લોકોને નોકરીની તકો સાથે જોડવાનું અમારું કાર્ય.","Quick Links":"ઝડપી લિંક્સ","Location":"સ્થળ","Email Address":"ઈમેલ સરનામું","Your email address":"તમારું ઈમેલ સરનામું","Resume / CV":"રિઝ્યૂમે / CV","Resume file size must be 10MB or less.":"રિઝ્યૂમેની ફાઇલ 10MB અથવા તેનાથી ઓછી હોવી જોઈએ."
+},
+hi: {
+"Home":"होम","Jobs":"जॉब्स","Work Areas":"कार्य क्षेत्र","Apply":"आवेदन करें","Contact":"संपर्क",
+"Recruitment & Staffing Services":"भर्ती और स्टाफिंग सेवाएं",
+"તમારી Job, અમારી Opportunity":"आपकी नौकरी, हमारा अवसर",
+"PRISHA STAFFING SERVICES સાથે Gujarat અને Gujarat બહાર ઉપલબ્ધ વિવિધ Job Opportunities માટે જોડાઓ. Supervisor, Helper, Back Office, Warehouse, Factory, Construction Site અને અન્ય ક્ષેત્રોમાં openings માટે અરજી કરો.":"PRISHA STAFFING SERVICES के साथ गुजरात और गुजरात के बाहर उपलब्ध विभिन्न नौकरी के अवसरों से जुड़ें। सुपरवाइजर, हेल्पर, बैक ऑफिस, वेयरहाउस, फैक्ट्री, कंस्ट्रक्शन साइट और अन्य क्षेत्रों में उपलब्ध नौकरियों के लिए आवेदन करें।",
+"🔎 Jobs જુઓ":"🔎 नौकरियां देखें","📝 Job માટે Apply કરો":"📝 नौकरी के लिए आवेदन करें",
+"અમારી સાથે કેમ જોડાવું?":"हमारे साथ क्यों जुड़ें?",
+"વિવિધ કંપનીઓની Job Opportunities":"विभिन्न कंपनियों में नौकरी के अवसर",
+"Gujarat અને અન્ય States માટે openings":"गुजरात और अन्य राज्यों में नौकरी के अवसर",
+"Supervisor થી Helper સુધી વિવિધ roles":"सुपरवाइजर से हेल्पर तक विभिन्न कार्य भूमिकाएं",
+"Office, Factory, Warehouse અને Site Jobs":"ऑफिस, फैक्ट्री, वेयरहाउस और साइट की नौकरियां",
+"સરળ Online Registration":"आसान ऑनलाइन पंजीकरण",
+"અમારી Staffing Services":"हमारी स्टाफिंग सेवाएं","વિવિધ industry અને work profiles માટે recruitment support.":"विभिन्न उद्योगों और कार्य क्षेत्रों के लिए भर्ती सहायता।",
+"Site & Construction":"साइट और निर्माण","Supervisor, Helper, Technician અને site-support જેવી Job Opportunities.":"सुपरवाइजर, हेल्पर, टेक्नीशियन और साइट सपोर्ट जैसी नौकरियां।",
+"Factory & Production":"फैक्ट्री और उत्पादन","Operator, Production, Technician અને Helper માટેની opportunities.":"ऑपरेटर, प्रोडक्शन, टेक्नीशियन और हेल्पर के लिए नौकरी के अवसर।",
+"Back Office":"बैक ऑफिस","Data Entry, Office Assistant, Admin અને support roles.":"डेटा एंट्री, ऑफिस असिस्टेंट, एडमिन और सपोर्ट की नौकरियां।",
+"વિવિધ કામના ક્ષેત્રો":"विभिन्न कार्य क्षेत्र","તમારી skill અને અનુભવ પ્રમાણે યોગ્ય opportunity શોધો.":"अपनी योग्यता और अनुभव के अनुसार सही नौकरी का अवसर खोजें।",
+"Construction Site":"कंस्ट्रक्शन साइट","Supervisor • Helper • Technician":"सुपरवाइजर • हेल्पर • टेक्नीशियन",
+"Factory & Production":"फैक्ट्री और उत्पादन","Operator • Production • Helper":"ऑपरेटर • प्रोडक्शन • हेल्पर",
+"Back Office":"बैक ऑफिस","Data Entry • Admin • Support":"डेटा एंट्री • एडमिन • सपोर्ट",
+"Warehouse & Logistics":"वेयरहाउस और लॉजिस्टिक्स","Picker • Packer • Loader • Store":"पिकर • पैकर • लोडर • स्टोर",
+"Latest Job Opportunities":"नवीनतम नौकरी के अवसर","નવી vacancy આવે ત્યારે આ sectionમાં Job details update કરી શકાય છે.":"नई नौकरी उपलब्ध होने पर इस अनुभाग में उसकी जानकारी अपडेट की जा सकती है।",
+"Production / Factory Jobs":"प्रोडक्शन / फैक्ट्री नौकरियां","📍 Gujarat & Other States • Full Time":"📍 गुजरात और अन्य राज्य • पूर्णकालिक",
+"Warehouse / Picker / Loader":"वेयरहाउस / पिकर / लोडर","📍 Gujarat • Full Time":"📍 गुजरात • पूर्णकालिक",
+"Supervisor / Helper / Site Work":"सुपरवाइजर / हेल्पर / साइट कार्य","📍 Gujarat & Pan India • Full Time":"📍 गुजरात और पूरे भारत में • पूर्णकालिक",
+"Back Office / Data Entry":"बैक ऑफिस / डेटा एंट्री","📍 Multiple Locations • Full Time":"📍 विभिन्न स्थान • पूर्णकालिक",
+"Apply for Job":"नौकरी के लिए आवेदन करें",
+"Gujarat + Pan India Opportunities":"गुजरात + पूरे भारत में नौकरी के अवसर",
+"Available company requirements પ્રમાણે Gujarat તથા અન્ય Statesમાં Job Opportunities.":"कंपनियों की उपलब्ध आवश्यकताओं के अनुसार गुजरात और अन्य राज्यों में नौकरी के अवसर।",
+"📍 Gujarat":"📍 गुजरात","📍 Madhya Pradesh":"📍 मध्य प्रदेश","📍 Uttar Pradesh":"📍 उत्तर प्रदेश","📍 Bihar":"📍 बिहार","📍 Rajasthan":"📍 राजस्थान","📍 Maharashtra":"📍 महाराष्ट्र","📍 Jharkhand":"📍 झारखंड","📍 Chhattisgarh":"📍 छत्तीसगढ़","📍 Other States":"📍 अन्य राज्य",
+"Job માટે Registration":"नौकरी के लिए पंजीकरण","તમારી basic details ભરો. Registration પછી માહિતી email દ્વારા અમને મોકલાશે.":"अपनी मूलभूत जानकारी भरें। पंजीकरण के बाद आपकी जानकारी ईमेल द्वारा हमें प्राप्त होगी।",
+"પૂરું નામ *":"पूरा नाम *","તમારું નામ":"अपना नाम","Mobile Number *":"मोबाइल नंबर *","10 digit mobile":"10 अंकों का मोबाइल नंबर","Village":"गांव","ગામ":"गांव","Taluka":"तालुका","તાલુકો":"तालुका","District":"जिला","જિલ્લો":"जिला","State":"राज्य","Gujarat":"गुजरात",
+"Education":"शैक्षणिक योग्यता","10th / 12th / ITI / Graduate":"10वीं / 12वीं / ITI / स्नातक","Experience":"अनुभव","Fresher / Experienced":"फ्रेशर / अनुभवी","Preferred Job":"पसंद की नौकरी","Preferred Location":"पसंद का स्थान","Gujarat / Other State":"गुजरात / अन्य राज्य",
+"Supervisor":"सुपरवाइजर","Helper":"हेल्पर","Back Office":"बैक ऑफिस","Construction Site":"कंस्ट्रक्शन साइट","Warehouse":"वेयरहाउस","Factory / Production":"फैक्ट्री / प्रोडक्शन","Technician":"टेक्नीशियन","Other":"अन्य",
+"Message / Remark":"संदेश / टिप्पणी","તમારી વધારાની માહિતી":"अतिरिक्त जानकारी","📩 Registration Submit કરો":"📩 पंजीकरण भेजें",
+"નોંધ: FormSubmit દ્વારા પ્રથમ registration પછી email verification માંગાઈ શકે છે. Email verification પૂર્ણ થયા પછી submissions તમારા email પર આવશે.":"नोट: पहली बार पंजीकरण के बाद ईमेल सत्यापन मांगा जा सकता है। ईमेल सत्यापन पूरा होने के बाद नई प्रविष्टियां आपके ईमेल पर आएंगी।",
+"Contact Prisha Staffing Services":"Prisha Staffing Services से संपर्क","Job માટે સીધો સંપર્ક કરો.":"नौकरी के लिए सीधे संपर्क करें।","📍 Main Location":"📍 मुख्य स्थान","Lunawada, Mahisagar, Gujarat, India":"लूनावाड़ा, महीसागर, गुजरात, भारत","Gujarat તથા અન્ય Statesની Job Opportunities માટે સંપર્ક કરી શકો છો.":"गुजरात और अन्य राज्यों की नौकरी के अवसरों के लिए संपर्क कर सकते हैं।",
+"📞 Contact & WhatsApp":"📞 संपर्क और WhatsApp","WhatsApp પર સંપર્ક કરો":"WhatsApp पर संपर्क करें","Connecting People With Job Opportunities.":"लोगों को नौकरी के अवसरों से जोड़ना हमारा कार्य है।","Quick Links":"त्वरित लिंक","Location":"स्थान","Email Address":"ईमेल पता","Your email address":"अपना ईमेल पता","Resume / CV":"रिज्यूमे / CV","Resume file size must be 10MB or less.":"रिज्यूमे की फाइल 10MB या उससे कम होनी चाहिए।"
+},
+en: {
+"Home":"Home","Jobs":"Jobs","Work Areas":"Work Areas","Apply":"Apply","Contact":"Contact",
+"Recruitment & Staffing Services":"Recruitment & Staffing Services",
+"તમારી Job, અમારી Opportunity":"Your Job, Our Opportunity",
+"PRISHA STAFFING SERVICES સાથે Gujarat અને Gujarat બહાર ઉપલબ્ધ વિવિધ Job Opportunities માટે જોડાઓ. Supervisor, Helper, Back Office, Warehouse, Factory, Construction Site અને અન્ય ક્ષેત્રોમાં openings માટે અરજી કરો.":"Connect with PRISHA STAFFING SERVICES for job opportunities in Gujarat and across India. Apply for Supervisor, Helper, Back Office, Warehouse, Factory, Construction Site and other roles.",
+"🔎 Jobs જુઓ":"🔎 View Jobs","📝 Job માટે Apply કરો":"📝 Apply for Job",
+"અમારી સાથે કેમ જોડાવું?":"Why Join With Us?",
+"વિવિધ કંપનીઓની Job Opportunities":"Job opportunities with different companies",
+"Gujarat અને અન્ય States માટે openings":"Openings in Gujarat and other states",
+"Supervisor થી Helper સુધી વિવિધ roles":"Roles from Supervisor to Helper",
+"Office, Factory, Warehouse અને Site Jobs":"Office, Factory, Warehouse and Site jobs",
+"સરળ Online Registration":"Easy online registration",
+"અમારી Staffing Services":"Our Staffing Services","વિવિધ industry અને work profiles માટે recruitment support.":"Recruitment support for different industries and work profiles.",
+"Site & Construction":"Site & Construction","Supervisor, Helper, Technician અને site-support જેવી Job Opportunities.":"Opportunities for Supervisors, Helpers, Technicians and site-support roles.",
+"Factory & Production":"Factory & Production","Operator, Production, Technician અને Helper માટેની opportunities.":"Opportunities for Operators, Production, Technicians and Helpers.",
+"Back Office":"Back Office","Data Entry, Office Assistant, Admin અને support roles.":"Data Entry, Office Assistant, Admin and support roles.",
+"વિવિધ કામના ક્ષેત્રો":"Different Work Areas","તમારી skill અને અનુભવ પ્રમાણે યોગ્ય opportunity શોધો.":"Find suitable opportunities based on your skills and experience.",
+"Construction Site":"Construction Site","Supervisor • Helper • Technician":"Supervisor • Helper • Technician",
+"Factory & Production":"Factory & Production","Operator • Production • Helper":"Operator • Production • Helper",
+"Back Office":"Back Office","Data Entry • Admin • Support":"Data Entry • Admin • Support",
+"Warehouse & Logistics":"Warehouse & Logistics","Picker • Packer • Loader • Store":"Picker • Packer • Loader • Store",
+"Latest Job Opportunities":"Latest Job Opportunities","નવી vacancy આવે ત્યારે આ sectionમાં Job details update કરી શકાય છે.":"Job details can be updated here whenever a new vacancy is available.",
+"Production / Factory Jobs":"Production / Factory Jobs","📍 Gujarat & Other States • Full Time":"📍 Gujarat & Other States • Full Time",
+"Warehouse / Picker / Loader":"Warehouse / Picker / Loader","📍 Gujarat • Full Time":"📍 Gujarat • Full Time",
+"Supervisor / Helper / Site Work":"Supervisor / Helper / Site Work","📍 Gujarat & Pan India • Full Time":"📍 Gujarat & Pan India • Full Time",
+"Back Office / Data Entry":"Back Office / Data Entry","📍 Multiple Locations • Full Time":"📍 Multiple Locations • Full Time",
+"Apply for Job":"Apply for Job",
+"Gujarat + Pan India Opportunities":"Gujarat + Pan India Opportunities",
+"Available company requirements પ્રમાણે Gujarat તથા અન્ય Statesમાં Job Opportunities.":"Job opportunities in Gujarat and other states based on available company requirements.",
+"📍 Gujarat":"📍 Gujarat","📍 Madhya Pradesh":"📍 Madhya Pradesh","📍 Uttar Pradesh":"📍 Uttar Pradesh","📍 Bihar":"📍 Bihar","📍 Rajasthan":"📍 Rajasthan","📍 Maharashtra":"📍 Maharashtra","📍 Jharkhand":"📍 Jharkhand","📍 Chhattisgarh":"📍 Chhattisgarh","📍 Other States":"📍 Other States",
+"Job માટે Registration":"Job Registration","તમારી basic details ભરો. Registration પછી માહિતી email દ્વારા અમને મોકલાશે.":"Enter your basic details. After registration, your information will be sent to us by email.",
+"પૂરું નામ *":"Full Name *","તમારું નામ":"Your name","Mobile Number *":"Mobile Number *","10 digit mobile":"10 digit mobile","Village":"Village","ગામ":"Village","Taluka":"Taluka","તાલુકો":"Taluka","District":"District","જિલ્લો":"District","State":"State","Gujarat":"Gujarat",
+"Education":"Education","10th / 12th / ITI / Graduate":"10th / 12th / ITI / Graduate","Experience":"Experience","Fresher / Experienced":"Fresher / Experienced","Preferred Job":"Preferred Job","Preferred Location":"Preferred Location","Gujarat / Other State":"Gujarat / Other State",
+"Supervisor":"Supervisor","Helper":"Helper","Back Office":"Back Office","Construction Site":"Construction Site","Warehouse":"Warehouse","Factory / Production":"Factory / Production","Technician":"Technician","Other":"Other",
+"Message / Remark":"Message / Remark","તમારી વધારાની માહિતી":"Additional information","📩 Registration Submit કરો":"📩 Submit Registration",
+"નોંધ: FormSubmit દ્વારા પ્રથમ registration પછી email verification માંગાઈ શકે છે. Email verification પૂર્ણ થયા પછી submissions તમારા email પર આવશે.":"Note: Email verification may be required after the first registration. New submissions will arrive at your email after verification.",
+"Contact Prisha Staffing Services":"Contact Prisha Staffing Services","Job માટે સીધો સંપર્ક કરો.":"Contact us directly for jobs.","📍 Main Location":"📍 Main Location","Lunawada, Mahisagar, Gujarat, India":"Lunawada, Mahisagar, Gujarat, India","Gujarat તથા અન્ય Statesની Job Opportunities માટે સંપર્ક કરી શકો છો.":"Contact us for job opportunities in Gujarat and other states.",
+"📞 Contact & WhatsApp":"📞 Contact & WhatsApp","WhatsApp પર સંપર્ક કરો":"Contact on WhatsApp","Connecting People With Job Opportunities.":"Connecting People With Job Opportunities.","Quick Links":"Quick Links","Location":"Location","Email Address":"Email Address","Your email address":"Your email address","Resume / CV":"Resume / CV","Resume file size must be 10MB or less.":"Resume file size must be 10MB or less."
+}
+};
+
+const originalTexts = new Map();
+function collectTextNodes(){
+ document.querySelectorAll("body *").forEach(el=>{
+   if(el.children.length===0 && el.textContent.trim()) originalTexts.set(el, el.textContent);
+ });
+}
+collectTextNodes();
+
+function setLanguage(lang){
+ const dict=L[lang]||L.en;
+ originalTexts.forEach((original,el)=>{
+   let value=original;
+   for(const [from,to] of Object.entries(dict)){
+     if(value.trim()===from){value=to;break;}
+   }
+   el.textContent=value;
+ });
+ // Translate placeholders and option labels
+ document.querySelectorAll("input,textarea").forEach(el=>{
+   const p=el.getAttribute("placeholder");
+   if(p && dict[p]) el.setAttribute("placeholder",dict[p]);
+ });
+ document.querySelectorAll("select option").forEach(opt=>{
+   const v=opt.textContent.trim();
+   if(dict[v]) opt.textContent=dict[v];
+ });
+ document.documentElement.lang=lang;
+ localStorage.setItem("prishaLanguage",lang);
+ document.getElementById("languageSelect").value=lang;
+}
+const saved=localStorage.getItem("prishaLanguage")||"gu";
+setLanguage(saved);
+document.getElementById("languageSelect").addEventListener("change",e=>setLanguage(e.target.value));
+</script>
+
+
+<script>
+const resumeInput = document.getElementById('resume');
+if (resumeInput) {
+  resumeInput.addEventListener('change', function () {
+    if (this.files && this.files[0] && this.files[0].size > 10 * 1024 * 1024) {
+      alert('Resume file size must be 10MB or less.');
+      this.value = '';
+    }
+  });
+}
+</script>
+
+</body>
+</html>
